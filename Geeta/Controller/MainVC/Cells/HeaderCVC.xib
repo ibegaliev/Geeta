@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HeaderCVC" customModule="Geeta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="316" height="45"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="316" height="45"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popular" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkz-cP-VXC">
+                        <rect key="frame" x="0.0" y="12" width="316" height="21"/>
+                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OgR-oo-FJs">
+                        <rect key="frame" x="0.0" y="42" width="316" height="3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="3" id="nUE-fb-eld"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="OgR-oo-FJs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="D3f-vw-VK6"/>
+                <constraint firstItem="OgR-oo-FJs" firstAttribute="top" secondItem="nkz-cP-VXC" secondAttribute="bottom" constant="9" id="Zlw-EY-Hk8"/>
+                <constraint firstItem="nkz-cP-VXC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cJL-Rp-V38"/>
+                <constraint firstAttribute="trailing" secondItem="OgR-oo-FJs" secondAttribute="trailing" id="ita-gN-3ML"/>
+                <constraint firstAttribute="bottom" secondItem="OgR-oo-FJs" secondAttribute="bottom" id="jdr-SG-Iji"/>
+                <constraint firstAttribute="trailing" secondItem="nkz-cP-VXC" secondAttribute="trailing" id="pJD-Yu-Q23"/>
+            </constraints>
+            <size key="customSize" width="316" height="45"/>
+            <connections>
+                <outlet property="headerLbl" destination="nkz-cP-VXC" id="DyI-W7-tva"/>
+                <outlet property="headerView" destination="OgR-oo-FJs" id="bC6-tP-ESi"/>
+            </connections>
+            <point key="canvasLocation" x="327.536231884058" y="167.07589285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
